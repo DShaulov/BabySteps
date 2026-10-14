@@ -1,0 +1,31 @@
+# ── Terraform ─────────────────────────────────────
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+tfplan
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+# Personal values (emails etc.). Commit *.tfvars.example instead.
+terraform.tfvars
+# NOTE: .terraform.lock.hcl is intentionally NOT ignored — commit it.
+
+# ── Node ──────────────────────────────────────────
+node_modules/
+dist/
+build/
+*.log
+.env
+.env.*
+!.env.example
+
+# ── Local tooling ─────────────────────────────────
+.dynamodb/
+.DS_Store
+.idea/
+.vscode/*
+!.vscode/extensions.json
